@@ -1,0 +1,51 @@
+{
+  "configurations": [
+    {
+      "name": "ARM64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/models",
+        "${workspaceFolder}/db",
+        "${workspaceFolder}/features",
+        "${workspaceFolder}/api",
+        "${vcpkgRoot}/arm64-windows/include",
+        "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/include"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "windowsSdkVersion": "10.0.22621.0",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.3x.x/bin/Hostx64/arm64/cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-arm64",
+      "configurationProvider": "ms-vscode.cmake-tools"
+    },
+    {
+      "name": "x64",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/models",
+        "${workspaceFolder}/db",
+        "${workspaceFolder}/features",
+        "${workspaceFolder}/api",
+        "${vcpkgRoot}/x64-windows/include",
+        "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/include"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "windowsSdkVersion": "10.0.22621.0",
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.3x.x/bin/Hostx64/x64/cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64",
+      "configurationProvider": "ms-vscode.cmake-tools"
+    }
+  ],
+  "version": 4
+}

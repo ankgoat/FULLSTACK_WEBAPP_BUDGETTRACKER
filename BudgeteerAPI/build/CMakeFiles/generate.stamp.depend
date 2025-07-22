@@ -1,0 +1,47 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Linker/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Linker/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake
+X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/CMakeLists.txt
+X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/build/CMakeFiles/4.1.0-rc2/CMakeCXXCompiler.cmake
+X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/build/CMakeFiles/4.1.0-rc2/CMakeRCCompiler.cmake
+X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/build/CMakeFiles/4.1.0-rc2/CMakeSystem.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/crow/CrowConfig.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/crow/CrowTargets.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/crow/Findasio.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/nlohmann_json/nlohmann_jsonTargets.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/unofficial-sqlite3/unofficial-sqlite3-config.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/unofficial-sqlite3/unofficial-sqlite3-targets-debug.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/unofficial-sqlite3/unofficial-sqlite3-targets-release.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/arm64-windows/share/unofficial-sqlite3/unofficial-sqlite3-targets.cmake
+X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake

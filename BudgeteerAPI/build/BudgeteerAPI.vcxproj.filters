@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\api\ExpectedRoutes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\api\TransactionRoutes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\db\Database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\db\ExpectedExpenseRepo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\db\TransactionRepo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\features\CategorySet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\features\CategorySummary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\features\ExpectedExpenseQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\features\RecentHistory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\features\UndoStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\features\UpcomingQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\models\ExpectedExpense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\models\Transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\models\UpcomingItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="X:\CodingProjects\BudgetTrackingApp\vcpkg\installed\arm64-windows\share\nlohmann_json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{479070D7-A49A-3041-AC3A-C6D59C7E80A7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

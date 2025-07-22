@@ -1,0 +1,10 @@
+{
+  "cmake.configureSettings": {
+    "CMAKE_TOOLCHAIN_FILE": "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake",
+    "VCPKG_TARGET_TRIPLET": "arm64-windows"
+  },
+  "files.associations": {
+    "xstring": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "enabled"
+}
