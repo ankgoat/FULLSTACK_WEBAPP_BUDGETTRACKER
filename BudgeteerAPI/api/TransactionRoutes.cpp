@@ -1,91 +1,34 @@
-#include "TransactionRoutes.h"
+#include "TransactionRoutes.hpp"
+#include "../include/JsonResponse.hpp"
+#include <nlohmann/json.hpp>
 
-void TransactionRoutes::registerRoutes(crow::App<>& app, TransactionRepo& repo) {
-    // OPTIONS for CORS preflight - /transactions
-    CROW_ROUTE(app, "/transactions").methods("OPTIONS"_method)(
-        []() {
-            crow::response res;
-            res.add_header("Access-Control-Allow-Origin", "*");
-            res.add_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-            res.add_header("Access-Control-Allow-Headers", "*");
-            res.code = 204;
-            return res;
-        }
-    );
+// If you have repos, keep these includes (adjust paths if needed)
+// #include "../db/TransactionRepo.h"
 
-    // GET /transactions - Get all transactions
-    CROW_ROUTE(app, "/transactions").methods("GET"_method)(
-        [repo]() { 
-            // TODO: Get transactions from repo
-            // Example: auto transactions = repo.getAllTransactions();
-            // return crow::json::wvalue(transactions);
-            return crow::json::wvalue(); 
-        }
-    );
+using json = nlohmann::json;
 
-    // OPTIONS for CORS preflight - /add
-    CROW_ROUTE(app, "/add").methods("OPTIONS"_method)(
-        []() {
-            crow::response res;
-            res.add_header("Access-Control-Allow-Origin", "*");
-            res.add_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-            res.add_header("Access-Control-Allow-Headers", "*");
-            res.code = 204;
-            return res;
-        }
-    );
+crow::response TransactionRoutes::addTransaction(const crow::request& req) {
+    try {
+        json body = json::parse(req.body);
+        // TODO: validate & persist
+        // TransactionRepo::add(body["description"].get<std::string>(), body["amount"].get<double>());
+        return json_ok(json{{"status","added"}}, 201);
+    } catch (...) {
+        return json_ok(json{{"error","Invalid JSON"}}, 400);
+    }
+}
 
-    // POST /add - Add new transaction
-    CROW_ROUTE(app, "/add").methods("POST"_method)(
-        [&repo](const crow::request& req) { 
-            // TODO: Parse request body and add transaction
-            // Example: auto data = crow::json::load(req.body);
-            // repo.addTransaction(data);
-            return crow::json::wvalue(); 
-        }
-    );
+crow::response TransactionRoutes::getTransactions(const crow::request& /*req*/) {
+    // TODO: fetch from DB
+    json txns = json::array({
+        {{"description","Groceries"},{"amount",-50}},
+        {{"description","Salary"},{"amount",2000}}
+    });
+    return json_ok(json{{"transactions", txns}});
+}
 
-    // OPTIONS for CORS preflight - /summary
-    CROW_ROUTE(app, "/summary").methods("OPTIONS"_method)(
-        []() {
-            crow::response res;
-            res.add_header("Access-Control-Allow-Origin", "*");
-            res.add_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-            res.add_header("Access-Control-Allow-Headers", "*");
-            res.code = 204;
-            return res;
-        }
-    );
-
-    // GET /summary - Get transaction summary
-    CROW_ROUTE(app, "/summary").methods("GET"_method)(
-        [&repo]() { 
-            // TODO: Get summary from repo
-            // Example: auto summary = repo.getSummary();
-            // return crow::json::wvalue(summary);
-            return crow::json::wvalue(); 
-        }
-    );
-
-    // OPTIONS for CORS preflight - /undo
-    CROW_ROUTE(app, "/undo").methods("OPTIONS"_method)(
-        []() {
-            crow::response res;
-            res.add_header("Access-Control-Allow-Origin", "*");
-            res.add_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-            res.add_header("Access-Control-Allow-Headers", "*");
-            res.code = 204;
-            return res;
-        }
-    );
-
-    // POST /undo - Undo last transaction
-    CROW_ROUTE(app, "/undo").methods("POST"_method)(
-        [&repo](const crow::request& req) { 
-            // TODO: Undo transaction
-            // Example: auto data = crow::json::load(req.body);
-            // repo.undoTransaction(data);
-            return crow::json::wvalue(); 
-        }
-    );
+crow::response TransactionRoutes::undoTransaction(const crow::request& /*req*/) {
+    // TODO: undo last transaction
+    // TransactionRepo::undoLast();
+    return json_ok(json{{"status","undone"}});
 }

@@ -1,0 +1,363 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22621 - ARM64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.13.9+e0f243f1e for .NET Framework
+      Build started 8/10/2025 2:29:46 PM.
+      
+      Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\3.29.6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "arm64-windows" from "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\CL.exe /c /I"X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\lib" /LIBPATH:"X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:ARM64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\3.29.6\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\3.29.6\\CompilerIdCXX\\CompilerIdCXX.exe" "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\3.29.6\\CompilerIdCXX\\CompilerIdCXX.exe" "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\3.29.6\\CompilerIdCXX\\CompilerIdCXX.exe" "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\arm64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostarm64\\arm64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\3.29.6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.91
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/3.29.6/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-y2n2dj"
+      binary: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-y2n2dj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      VCPKG_INSTALLED_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-y2n2dj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_40d95.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.9+e0f243f1e for .NET Framework
+        Build started 8/10/2025 2:29:48 PM.
+        
+        Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2n2dj\\cmTC_40d95.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_40d95.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2n2dj\\Debug\\".
+          Creating directory "cmTC_40d95.dir\\Debug\\cmTC_40d95.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_40d95.dir\\Debug\\cmTC_40d95.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_40d95.dir\\Debug\\cmTC_40d95.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40d95.dir\\Debug\\\\" /Fd"cmTC_40d95.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for ARM64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40d95.dir\\Debug\\\\" /Fd"cmTC_40d95.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\link.exe /ERRORREPORT:QUEUE /OUT:"X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2n2dj\\Debug\\cmTC_40d95.exe" /INCREMENTAL /ILK:"cmTC_40d95.dir\\Debug\\cmTC_40d95.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-y2n2dj/Debug/cmTC_40d95.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-y2n2dj/Debug/cmTC_40d95.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_40d95.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_40d95.vcxproj -> X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2n2dj\\Debug\\cmTC_40d95.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_40d95.dir\\Debug\\cmTC_40d95.tlog\\unsuccessfulbuild".
+          Touching "cmTC_40d95.dir\\Debug\\cmTC_40d95.tlog\\cmTC_40d95.lastbuildstate".
+        Done Building Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y2n2dj\\cmTC_40d95.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.49
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostArm64/arm64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.43.34808/bin/HostArm64/arm64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.43.34808.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow/Findasio.cmake:17 (find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow/CrowConfig.cmake:32 (find_dependency)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:40 (find_package)"
+    directories:
+      source: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-nkft6h"
+      binary: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-nkft6h"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow"
+      VCPKG_INSTALLED_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-nkft6h'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_0e87e.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.9+e0f243f1e for .NET Framework
+        Build started 8/10/2025 2:29:48 PM.
+        
+        Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\cmTC_0e87e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0e87e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\Debug\\".
+          Creating directory "cmTC_0e87e.dir\\Debug\\cmTC_0e87e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0e87e.dir\\Debug\\cmTC_0e87e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0e87e.dir\\Debug\\cmTC_0e87e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_0e87e.dir\\Debug\\\\" /Fd"cmTC_0e87e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for ARM64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_0e87e.dir\\Debug\\\\" /Fd"cmTC_0e87e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\src.cxx"
+          src.cxx
+        X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\cmTC_0e87e.vcxproj]
+        Done Building Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\cmTC_0e87e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\cmTC_0e87e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\src.cxx(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nkft6h\\cmTC_0e87e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.25
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow/Findasio.cmake:17 (find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow/CrowConfig.cmake:32 (find_dependency)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:40 (find_package)"
+    directories:
+      source: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-oam9io"
+      binary: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-oam9io"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow"
+      VCPKG_INSTALLED_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-oam9io'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_2e442.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.9+e0f243f1e for .NET Framework
+        Build started 8/10/2025 2:29:49 PM.
+        
+        Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\cmTC_2e442.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2e442.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\Debug\\".
+          Creating directory "cmTC_2e442.dir\\Debug\\cmTC_2e442.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2e442.dir\\Debug\\cmTC_2e442.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2e442.dir\\Debug\\cmTC_2e442.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_2e442.dir\\Debug\\\\" /Fd"cmTC_2e442.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for ARM64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_2e442.dir\\Debug\\\\" /Fd"cmTC_2e442.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\link.exe /ERRORREPORT:QUEUE /OUT:"X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\Debug\\cmTC_2e442.exe" /INCREMENTAL /ILK:"cmTC_2e442.dir\\Debug\\cmTC_2e442.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-oam9io/Debug/cmTC_2e442.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-oam9io/Debug/cmTC_2e442.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_2e442.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\cmTC_2e442.vcxproj]
+        Done Building Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\cmTC_2e442.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\cmTC_2e442.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-oam9io\\cmTC_2e442.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.33
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow/Findasio.cmake:17 (find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow/CrowConfig.cmake:32 (find_dependency)"
+      - "X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake:896 (_find_package)"
+      - "CMakeLists.txt:40 (find_package)"
+    directories:
+      source: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-rawg96"
+      binary: "X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-rawg96"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/crow"
+      VCPKG_INSTALLED_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "X:/CodingProjects/BudgetTrackingApp/vcpkg"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-rawg96'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/arm64/MSBuild.exe" cmTC_940d2.vcxproj /p:Configuration=Debug /p:Platform=ARM64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.13.9+e0f243f1e for .NET Framework
+        Build started 8/10/2025 2:29:49 PM.
+        
+        Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\cmTC_940d2.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_940d2.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\Debug\\".
+          Creating directory "cmTC_940d2.dir\\Debug\\cmTC_940d2.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_940d2.dir\\Debug\\cmTC_940d2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_940d2.dir\\Debug\\cmTC_940d2.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_940d2.dir\\Debug\\\\" /Fd"cmTC_940d2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\CheckFunctionExists.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for ARM64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _ARM64_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"cmTC_940d2.dir\\Debug\\\\" /Fd"cmTC_940d2.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\CheckFunctionExists.cxx"
+          CheckFunctionExists.cxx
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostArm64\\arm64\\link.exe /ERRORREPORT:QUEUE /OUT:"X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\Debug\\cmTC_940d2.exe" /INCREMENTAL /ILK:"cmTC_940d2.dir\\Debug\\cmTC_940d2.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-rawg96/Debug/cmTC_940d2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"X:/CodingProjects/BudgetTrackingApp/build/CMakeFiles/CMakeScratch/TryCompile-rawg96/Debug/cmTC_940d2.lib" /MACHINE:ARM64  /machine:ARM64 cmTC_940d2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\cmTC_940d2.vcxproj]
+        Done Building Project "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\cmTC_940d2.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\cmTC_940d2.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [X:\\CodingProjects\\BudgetTrackingApp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rawg96\\cmTC_940d2.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 1
+...

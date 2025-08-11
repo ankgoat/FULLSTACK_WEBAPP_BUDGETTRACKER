@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\api\ExpectedRoutes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\api\TransactionRoutes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\models\ExpectedExpense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\models\Transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\models\UpcomingItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="X:\CodingProjects\BudgetTrackingApp\BudgeteerAPI\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="X:\CodingProjects\BudgetTrackingApp\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CD874EEC-31DD-371E-A338-E29996BAF131}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

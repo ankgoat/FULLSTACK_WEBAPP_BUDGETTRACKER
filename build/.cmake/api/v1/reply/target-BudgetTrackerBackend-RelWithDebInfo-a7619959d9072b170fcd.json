@@ -1,0 +1,364 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "RelWithDebInfo/BudgetTrackerBackend.exe"
+		},
+		{
+			"path" : "RelWithDebInfo/BudgetTrackerBackend.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"_find_package",
+			"find_package",
+			"boostcfg_find_component",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"X:/CodingProjects/BudgetTrackingApp/vcpkg/scripts/buildsystems/vcpkg.cmake",
+			"CMakeLists.txt",
+			"X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/boost_filesystem/boost_filesystem-targets.cmake",
+			"X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/boost_filesystem/boost_filesystem-config.cmake",
+			"X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/boost/BoostConfig.cmake",
+			"X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/boost/vcpkg-cmake-wrapper.cmake",
+			"C:/Program Files/CMake/share/cmake-3.29/Modules/FindBoost.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 600,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 850,
+				"parent" : 4
+			},
+			{
+				"file" : 5,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 6
+			},
+			{
+				"file" : 6,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 6,
+				"line" : 594,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 850,
+				"parent" : 9
+			},
+			{
+				"file" : 5,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 3,
+				"parent" : 11
+			},
+			{
+				"file" : 4,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 128,
+				"parent" : 13
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 67,
+				"parent" : 14
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 896,
+				"parent" : 15
+			},
+			{
+				"file" : 3,
+				"parent" : 16
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 52,
+				"parent" : 17
+			},
+			{
+				"file" : 2,
+				"parent" : 18
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 60,
+				"parent" : 19
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -std:c++17 -MD"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "ASIO_STANDALONE"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BOOST_FILESYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 22,
+					"path" : "X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/include"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/api"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/models"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/db"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3,
+					3
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "BudgetTrackerBackend::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:ARM64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\x64-windows\\lib\\boost_filesystem-vc143-mt-x64-1_88.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\x64-windows\\debug\\lib\\sqlite3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "X:\\CodingProjects\\BudgetTrackingApp\\vcpkg\\installed\\x64-windows\\lib\\boost_system-vc143-mt-x64-1_88.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "BudgetTrackerBackend",
+	"nameOnDisk" : "BudgetTrackerBackend.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "api/ExpectedRoutes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "api/TransactionRoutes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "models/ExpectedExpense.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "models/Transaction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "models/UpcomingItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "X:/CodingProjects/BudgetTrackingApp/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_json.natvis",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

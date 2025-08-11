@@ -1,13 +1,14 @@
-import axios from 'axios';
+// src/api/summaryAPI.js
+const BASE = '';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:18080';
+export async function getSummary() {
+  const res = await fetch(`${BASE}/summary`);
+  if (!res.ok) throw new Error(`Summary request failed: ${res.status} ${res.statusText}`);
+  return res.json();
+}
 
-export const getCategorySummary = async () => {
-  try {
-    const response = await axios.get(`${API_BASE}/summary/categories`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching category summary:', error);
-    throw error;
-  }
-};
+// Some pages import getCategorySummary. Provide it as a thin wrapper.
+export async function getCategorySummary() {
+  const data = await getSummary();
+  return data?.byCategory ?? [];
+}

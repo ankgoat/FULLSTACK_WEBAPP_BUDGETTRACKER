@@ -1,43 +1,36 @@
-import axios from 'axios';
+// Transaction API — uses Vite dev proxy to hit http://localhost:18080
+const BASE = '';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:18080';
-
-export const addTransaction = async (transactionData) => {
-  try {
-    const response = await axios.post(`${API_BASE}/add`, transactionData);
-    return response.data;
-  } catch (error) {
-    console.error('Error adding transaction:', error);
-    throw error;
+async function http(path, init = {}) {
+  const res = await fetch(`${BASE}${path}`, {
+    headers: { 'Content-Type': 'application/json', ...(init.headers || {}) },
+    ...init,
+  });
+  if (!res.ok) {
+    throw new Error(`Transactions request failed: ${res.status} ${res.statusText}`);
   }
-};
+  return res.status === 204 ? null : res.json();
+}
 
-export const getTransactions = async () => {
-  try {
-    const response = await axios.get(`${API_BASE}/transactions`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching transactions:', error);
-    throw error;
-  }
-};
+export function getTransactions() {
+  return http('/transactions');
+}
 
-export const getSummary = async () => {
-  try {
-    const response = await axios.get(`${API_BASE}/summary`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching summary:', error);
-    throw error;
-  }
-};
+export function createTransaction(tx) {
+  // backend route: POST /transactions/add
+  return http('/transactions/add', {
+    method: 'POST',
+    body: JSON.stringify(tx),
+  });
+}
 
-export const undoTransaction = async () => {
-  try {
-    const response = await axios.post(`${API_BASE}/undo`);
-    return response.data;
-  } catch (error) {
-    console.error('Error undoing transaction:', error);
-    throw error;
-  }
-};
+export function undoTransaction(id) {
+  // backend route: POST /transactions/undo
+  return http('/transactions/undo', {
+    method: 'POST',
+    body: JSON.stringify({ id }),
+  });
+}
+
+// Export alias for backward compatibility
+export { createTransaction as addTransaction };

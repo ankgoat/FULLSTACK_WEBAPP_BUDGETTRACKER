@@ -1,10 +1,15 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    exclude: ['lucide-react'],
+  server: {
+    port: 5173,
+    proxy: {
+      '/summary':      { target: 'http://localhost:18080', changeOrigin: true },
+      '/transactions': { target: 'http://localhost:18080', changeOrigin: true },
+      '/expected':     { target: 'http://localhost:18080', changeOrigin: true },
+    },
   },
-});
+})
+

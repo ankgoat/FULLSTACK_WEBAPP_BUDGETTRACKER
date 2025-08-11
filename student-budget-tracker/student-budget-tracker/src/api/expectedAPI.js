@@ -1,33 +1,6 @@
-import axios from 'axios';
+// src/api/expectedAPI.js
+const BASE = '';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:18080';
-
-export const addExpectedExpense = async (expenseData) => {
-  try {
-    const response = await axios.post(`${API_BASE}/expected/add`, expenseData);
-    return response.data;
-  } catch (error) {
-    console.error('Error adding expected expense:', error);
-    throw error;
-  }
-};
-
-export const getUpcomingExpenses = async () => {
-  try {
-    const response = await axios.get(`${API_BASE}/expected/upcoming`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching upcoming expenses:', error);
-    throw error;
-  }
-};
-
-export const processExpectedExpenses = async () => {
-  try {
-    const response = await axios.post(`${API_BASE}/expected/process`);
-    return response.data;
-  } catch (error) {
-    console.error('Error processing expected expenses:', error);
-    throw error;
-  }
-};
+export const addExpectedExpense      = (data) => fetch(`${BASE}/expected/add`,      { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data) }).then(r => r.json());
+export const getUpcomingExpenses     = ()      => fetch(`${BASE}/expected/upcoming`).then(r => r.json());
+export const processExpectedExpenses = ()      => fetch(`${BASE}/expected/process`,  { method:'POST' }).then(r => r.json());

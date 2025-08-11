@@ -1,3 +1,0 @@
-X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/build/CMakeFiles/BudgeteerAPI.dir
-X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/build/CMakeFiles/ALL_BUILD.dir
-X:/CodingProjects/BudgetTrackingApp/BudgeteerAPI/build/CMakeFiles/ZERO_CHECK.dir

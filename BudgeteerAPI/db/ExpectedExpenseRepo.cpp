@@ -1,33 +1,18 @@
 #include "ExpectedExpenseRepo.h"
-
 using namespace std;
 
-// Constructor
-ExpectedExpenseRepo::ExpectedExpenseRepo(sqlite3* db) : db(db) {}
-
-// Add a new expected expense
-void ExpectedExpenseRepo::addExpectedExpense(const ExpectedExpense& expense) {
-    // TODO: Implement insert query using sqlite3
+bool ExpectedExpenseRepo::createExpectedExpense(const ExpectedExpense& exp) {
+    // Insert expected expense
+    return true;
 }
 
-// Get all expected expenses
-vector<ExpectedExpense> ExpectedExpenseRepo::getAllExpectedExpenses() {
-    // TODO: Implement select * query using sqlite3
-    return {};
+vector<ExpectedExpense> ExpectedExpenseRepo::getUpcomingExpectedExpenses() {
+    vector<ExpectedExpense> exps;
+    // Query for upcoming
+    return exps;
 }
 
-// Get expected expense by ID
-ExpectedExpense ExpectedExpenseRepo::getExpectedExpenseById(int id) {
-    // TODO: Implement select by ID using sqlite3
-    return ExpectedExpense();
-}
-
-// Update an expected expense
-void ExpectedExpenseRepo::updateExpectedExpense(const ExpectedExpense& expense) {
-    // TODO: Implement update query using sqlite3
-}
-
-// Delete an expected expense by ID
-void ExpectedExpenseRepo::deleteExpectedExpense(int id) {
-    // TODO: Implement delete query using sqlite3
+bool ExpectedExpenseRepo::processNextExpectedExpense() {
+    // Advance the next expected/recurring date
+    return true;
 }
